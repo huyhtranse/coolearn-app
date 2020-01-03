@@ -1,0 +1,140 @@
+.profile {
+  background-image: linear-gradient(
+    to right bottom,
+    $color-primary,
+    $color-primary-dark
+  );
+  padding: 5rem 0;
+
+  &__container {
+    width: 100rem;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 27rem 1fr;
+    grid-template-rows: 10rem minmax(30rem, 1fr);
+    background-image: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.8)
+    );
+  }
+
+  &__content {
+    grid-row: 1 / -1;
+
+    &--main {
+      text-align: center;
+      padding: 6rem 0;
+      border-bottom: 1px solid #f2f3f5;
+      color: $color-dark;
+
+      & h4 {
+        font-size: 2rem;
+
+        & span {
+          font-weight: bold;
+          padding: 1rem;
+          color: #17a68a;
+          background-color: #17a68ab0;
+        }
+      }
+
+      & h3 {
+        font-weight: bold;
+        font-size: 2.5rem;
+        padding-top: 2rem;
+      }
+    }
+  }
+
+  &__list {
+    list-style: none;
+    font-size: 1.4rem;
+    margin-top: 3.5rem;
+  }
+
+  &__item {
+    padding-bottom: 2rem;
+    &:not(:last-child) {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &__link {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    padding: 1.5rem 3rem;
+    position: relative;
+    z-index: 10;
+
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    font-size: 1.6rem;
+    font-weight: bold;
+    background-color: #e8e9eb;
+    transition: all 0.3s;
+
+    &:hover {
+      text-decoration: none;
+      background-color: $color-dark;
+      color: white;
+    }
+  }
+
+  &__heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #f2f3f5;
+    border-left: 1px solid #f2f3f5;
+    & h3 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+  }
+
+  &__form {
+    display: grid;
+    grid-template-rows: 37rem 10rem;
+    border-left: 1px solid #f2f3f5;
+  }
+
+  &__button {
+    grid-row: 2 / span 1;
+    border-top: 1px solid #f2f3f5;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+    &-bottom {
+      font-size: 2.5rem;
+      font-weight: bold;
+      background-color: $color-primary;
+      color: white;
+      transition: all 0.3s;
+      border: none;
+      padding: 1.1rem;
+      border-radius: 3px;
+
+      &:hover {
+        color: white;
+        background-color: $color-primary-dark;
+      }
+    }
+  }
+
+  &__flex {
+    width: 50%;
+    align-self: center;
+    justify-self: center;
+  }
+}
+
+.manager {
+  margin-top: 26px;
+}

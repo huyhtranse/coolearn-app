@@ -1,0 +1,50 @@
+.signin {
+  background-image: linear-gradient(
+    to right bottom,
+    $color-primary,
+    $color-primary-dark
+  );
+  padding: 10rem 0;
+
+  &__content {
+    background-image: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    );
+    width: 90rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  &__heading {
+    padding: 5rem 0 0;
+
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+  }
+
+  &__input {
+    width: 100%;
+  }
+
+  &__group {
+    width: 35rem;
+  }
+
+  &__button {
+    text-align: center;
+    margin-top: -17px;
+
+    & button {
+      margin-top: 0;
+      padding: 1rem 1.5rem;
+      border-radius: 30px;
+      font-size: 1.8rem;
+    }
+  }
+}

@@ -1,0 +1,102 @@
+.signup {
+  background-image: linear-gradient(
+    to right bottom,
+    $color-primary,
+    $color-primary-dark
+  );
+  padding: 10rem 0;
+
+  &__content {
+    background-image: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    );
+    width: 90rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  &__heading {
+    padding-top: 4rem;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  &__gird {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(25rem, 1fr));
+  }
+
+  &__email {
+    grid-column: 1 / span 2 !important;
+    margin-bottom: 0;
+
+    & input {
+      width: 95%;
+    }
+  }
+  &__button {
+    text-align: center;
+    & button {
+      margin-top: 0;
+      padding: 1rem 1.5rem;
+      border-radius: 30px;
+      font-size: 1.8rem;
+
+      &:hover {
+        background-color: $color-primary-dark;
+      }
+    }
+  }
+}
+
+.form-group {
+  margin-bottom: 5rem;
+
+  p {
+    font-weight: bold;
+    font-size: 1.35rem;
+    margin-top: -22px;
+    margin-left: 19px;
+    color: #ff7730;
+  }
+}
+
+.form__input {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: inherit;
+  color: inherit;
+  padding: 1rem 2rem;
+  border-radius: 2px;
+  background-color: rbga(#fff, 0.5);
+  border: none;
+  border-bottom: 3px solid transparent;
+  width: 90%;
+  display: block;
+  transition: all 0.3s;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:placeholder-shown + .form__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
+  }
+}
+.form__label {
+  font-size: 1.45rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+  display: block;
+  transform: translateY(-8rem);
+  transition: all 0.3s;
+}

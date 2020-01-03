@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "GothamRounded";
+  src: local("GothamRounded"),
+    url(../../fonts/SVN-Gotham-Rounded-Regular.ttf) format("truetype");
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  // this defines what 1rem is
+  font-size: 62.5%; // 1rem = 10px; 10px/16px = 62.5%
+  @media only screen and (max-width: $bp-large) {
+    font-size: 55%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "GothamRounded", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+svg {
+  pointer-events: none;
+}

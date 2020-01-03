@@ -1,0 +1,202 @@
+.my-button {
+  font-size: $default-font-size;
+  border-radius: 20px;
+  margin: 2rem;
+  border: 2px solid $color-primary;
+  padding: 0.5rem 1rem;
+  width: 13rem;
+  font-weight: 600;
+  width: 21rem;
+  transition: all 0.3s;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  }
+
+  &-outline {
+    background-color: #fff;
+    color: $color-grey-dark;
+  }
+
+  &-full {
+    background-image: linear-gradient(
+      to right,
+      $color-primary,
+      $color-primary-dark
+    );
+    border: none;
+    color: $color-white;
+  }
+}
+
+.link-header {
+  display: inline-block;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: #1abc9c;
+    border-radius: 5px;
+  }
+
+  & > a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: #fff;
+    padding: 0.9rem;
+    display: inline-block;
+    white-space: nowrap;
+    text-transform: uppercase;
+  }
+}
+
+.btn-logout {
+  font-size: 1.6rem;
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-weight: bold;
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 0.8rem;
+  transition: all 0.3s;
+  border-radius: 5px;
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 1.4rem;
+  }
+
+  &:hover {
+    background-color: #1abc9c;
+  }
+}
+
+.btn-profile {
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  padding: 0.9rem;
+  background-color: #1abc9c;
+  font-size: 2rem;
+  margin-right: 0.5rem;
+  transition: all 0.3s;
+
+  @media screen and (max-width: $bp-largest) {
+    font-size: 1.8rem;
+  }
+
+  @media screen and (max-width: $bp-large) {
+    margin-right: 0.5rem !important;
+  }
+
+  &:hover {
+    text-decoration: none;
+    color: white;
+    background-color: $color-primary-dark;
+  }
+}
+
+.btn-slider {
+  background-color: $color-primary;
+  border: medium none;
+  border-radius: 25px;
+  color: #fff;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.7rem;
+  padding: 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  width: 25rem;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: $color-primary-dark;
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+.header__signin,
+.header__signup {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: #fff;
+  padding: 0.9rem;
+  display: inline-block;
+  white-space: nowrap;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  margin-right: 2rem;
+  border-radius: 5px;
+
+  &:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: $color-primary-dark;
+  }
+}
+
+.header__signup {
+  background-color: #1abc9c;
+  border-radius: 5px;
+  margin-right: 0;
+}
+
+.header__signin:hover {
+  color: #1abc9c;
+
+  background-color: #fff;
+}
+
+// button back to top
+#button__to__top {
+  display: inline-block;
+  background-color: $color-primary;
+  width: 5rem;
+  height: 5rem;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 5rem;
+  right: 5rem;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  cursor: pointer;
+
+  @media only screen and (max-width: $bp-largest) {
+    bottom: 4rem;
+    right: 4rem;
+    width: 4rem;
+    height: 4rem;
+  }
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & svg {
+    fill: white;
+  }
+
+  &:hover {
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    background-color: $color-primary-dark;
+  }
+
+  &:active {
+    background-color: #3a464b;
+  }
+
+  &.show {
+    opacity: 1;
+    visibility: visible;
+  }
+}
