@@ -2,7 +2,7 @@
 
 ### [Live Site] (https://coolearn.herokuapp.com/)
 
-!(https://user-images.githubusercontent.com/54434089/183541802-b63f7bbd-f000-425c-8d29-26c4be35d451.png)
+![image](https://user-images.githubusercontent.com/54434089/183541802-b63f7bbd-f000-425c-8d29-26c4be35d451.png)
 
 ## Introduction
 The project is my first completed, to show interviewers how I applied what I learnt. 
@@ -13,5 +13,5 @@ Setup:
 - run ``` npm i && npm start ``` for client to start the applications
 
 Account access admin
-user: huyhuy123
-pwd: huyhuy123
+user: ```huyhuy123```
+pwd: ```huyhuy123```
